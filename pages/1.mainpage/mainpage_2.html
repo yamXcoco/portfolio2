@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio_profile</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/text_v.js"></script>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/img/Yunjung JO.png" alt="" />
+          </a>
+        </div>
+        <div class="sub_title">
+          <a href="/pages/1.mainpage/mainpage_1.html">
+            <p class="p1">자기소개</p>
+          </a>
+          <a href="/pages/1.mainpage/mainpage_2.html">
+            <p class="p2">작업물</p>
+          </a>
+          <a href="/pages/1.mainpage/mainpage_3.html">
+            <p class="p3">연락</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="content1">
+        <h1 class="shadow">작업물 전체보기</h1>
+        <p>
+          작업물은 총 3가지 파트로 분류되어있습니다. <br />
+          썸네일 아이콘을 눌러주시면 상세작업 페이지로 이동합니다. <br />
+          감사합니다.
+        </p>
+      </div>
+      <div class="content2">
+        <div class="imgs">
+          <img src="/img/main/Rectangle 39.png" alt="" />
+          <img src="/img/main/Rectangle 38.png" alt="" />
+          <img src="/img/main/Rectangle 40.png" alt="" />
+        </div>
+        <ul class="box">
+          <li>
+            <p class="title">UI / UX</p>
+            <div class="overlay"></div>
+            <div class="button">
+              <a href="/pages/2.middlepage/Uiux.html">더보기</a>
+            </div>
+          </li>
+          <li>
+            <p class="title">Publishing</p>
+            <div class="overlay"></div>
+            <div class="button">
+              <a href="/pages/2.middlepage/Publishing.html">더보기</a>
+            </div>
+          </li>
+          <li>
+            <p class="title">Graphic Design</p>
+            <div class="overlay"></div>
+            <div class="button">
+              <a href="/pages/2.middlepage/graphic.html">더보기</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="social">
+        <a href="#x">
+          <img src="/img/social1.png" alt="" />
+        </a>
+        <a href="#x">
+          <img src="/img/social2.png" alt="" />
+        </a>
+        <a href="#x">
+          <img src="/img/social3.png" alt="" />
+        </a>
+        <a href="#x">
+          <img src="/img/social4.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <!-- gotop -->
+    <div class="gotop">
+      <i class="xi-arrow-up"></i>
+    </div>
+    <!-- 커서 -->
+    <script>
+      let mouseCursor = document.querySelector('.cursor')
+      let navLinks = document.querySelectorAll('.sub_title a') 
+      let navLinkss = document.querySelectorAll('.logo a')
+      let navLinksss = document.querySelectorAll('.button')
+      window.addEventListener('scroll', cursor)
+      window.addEventListener('mousemove', cursor)
+      function cursor(e) {
+        mouseCursor.style.left = e.pageX + 'px'
+        mouseCursor.style.top = e.pageY + 'px'
+      }
+    </script>
+    <script>
+      navLinks.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+          mouseCursor.classList.add('cursor-grow')
+          mouseCursor.style.zIndex = '-1'
+          link.classList.add('hovered-link')
+        })
+        link.addEventListener('mouseleave', () => {
+          mouseCursor.classList.remove('cursor-grow')
+          mouseCursor.style.zIndex = '1000'
+          link.classList.remove('hovered-link')
+        })
+      })
+      navLinkss.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+          mouseCursor.classList.add('cursor-grow')
+          mouseCursor.style.zIndex = '-1'
+          link.classList.add('hovered-link')
+        })
+        link.addEventListener('mouseleave', () => {
+          mouseCursor.classList.remove('cursor-grow')
+          mouseCursor.style.zIndex = '1000'
+          link.classList.remove('hovered-link')
+        })
+      })
+      navLinksss.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+          mouseCursor.classList.add('cursor-grow')
+          mouseCursor.style.zIndex = '-1'
+          link.classList.add('hovered-link')
+        })
+        link.addEventListener('mouseleave', () => {
+          mouseCursor.classList.remove('cursor-grow')
+          mouseCursor.style.zIndex = '1000'
+          link.classList.remove('hovered-link')
+        })
+      })
+    </script>
+  </body>
+</html>

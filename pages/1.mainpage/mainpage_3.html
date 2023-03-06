@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio_profile</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="/js/common.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/img/Yunjung JO.png" alt="" />
+          </a>
+        </div>
+        <div class="sub_title">
+          <a href="/pages/1.mainpage/mainpage_1.html">
+            <p class="p1">자기소개</p>
+          </a>
+          <a href="/pages/1.mainpage/mainpage_2.html">
+            <p class="p2">작업물</p>
+          </a>
+          <a href="/pages/1.mainpage/mainpage_3.html">
+            <p class="p3">연락</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container3">
+      <div class="content1">
+        <h1>LET’S CONNECT</h1>
+        <h2>연락</h2>
+        <p>
+          와주셔서 감사합니다. <br />
+          작업을 재미있게 보셨거나 더 궁금하신 이야기가 있으시면 <br />
+          아래의 연락처로 편하게 연락주시면 감사하겠습니다. <br />
+        </p>
+      </div>
+      <div class="content2">
+        <div class="box1">
+          <h3>만나러 가기</h3>
+          <ul>
+            <li>
+              <img src="/img/main/vectormail.png" alt="" />
+              <h4>이메일</h4>
+              <p>
+                이메일 : j_yunj@naver.com <br />
+                Skype ID : whdbswjd521
+              </p>
+            </li>
+            <li>
+              <img src="/img/main/Vectorlike.png" alt="" />
+              <h4>소셜미디어</h4>
+              <div class="social">
+                <a href="#x">
+                  <i class="xi-skype xi-2x"></i>
+                </a>
+                <a href="#x">
+                  <i class="xi-facebook xi-2x"></i>
+                </a>
+                <a href="#x">
+                  <i class="xi-youtube-play xi-2x"></i>
+                </a>
+                <a href="#x">
+                  <i class="xi-github xi-2x"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="box2">
+          <form id="contact-form" class="gform">
+            <input type="hidden" name="contact_number" />
+            <input type="hidden" name="subject" value="안녕하세요!!!!" />
+            <div class="inputs1">
+              <div class="co">
+                <label>소속</label>
+                <input type="text" placeholder="소속" />
+              </div>
+              <div class="co">
+                <label>목적</label>
+                <input
+                  id="username"
+                  type="text"
+                  name="name"
+                  placeholder="목적"
+                />
+              </div>
+            </div>
+            <label>이메일</label>
+            <input id="email" type="email" name="email" placeholder="이메일" />
+            <label>메시지 적기</label>
+            <textarea
+              id="message"
+              name="message"
+              cols="30"
+              rows="6"
+              placeholder="내용"
+            ></textarea>
+            <button class="btn" type="submit">메일 보내기</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="dimm">
+        <i class="xi-spinner-5 xi-spin"></i>
+      </div>
+
+      <div class="modal">
+        <span>✨</span>
+        <p>
+          메일이 성공적으로 <br />
+          발송되었습니다.
+        </p>
+        <button class="close">닫기</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="social">
+        <a href="#x">
+          <img src="/img/social1.png" alt="" />
+        </a>
+        <a href="#x">
+          <img src="/img/social2.png" alt="" />
+        </a>
+        <a href="#x">
+          <img src="/img/social3.png" alt="" />
+        </a>
+        <a href="#x">
+          <img src="/img/social4.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <!-- cursor -->
+    <div class="cursor"></div>
+    <!-- gotop -->
+    <div class="gotop">
+      <i class="xi-arrow-up"></i>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init('9lEGkKPbu0kznDV1X')
+      })()
+    </script>
+    <!-- 커서 -->
+    <script>
+      let mouseCursor = document.querySelector('.cursor')
+      let navLinks = document.querySelectorAll('.sub_title a')
+      let navLinkss = document.querySelectorAll('.logo a')
+      //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+      window.addEventListener('scroll', cursor)
+      window.addEventListener('mousemove', cursor)
+      //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+      function cursor(e) {
+        mouseCursor.style.left = e.pageX + 'px'
+        // mouseCursor.style.left = e.mouseX + 'px'
+        mouseCursor.style.top = e.pageY + 'px'
+        // mouseCursor.style.top = e.mouseY - scrollY + 'px'
+      }
+    </script>
+    <script>
+      navLinks.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+          mouseCursor.classList.add('cursor-grow')
+          mouseCursor.style.zIndex = '-1'
+          link.classList.add('hovered-link')
+        })
+        link.addEventListener('mouseleave', () => {
+          mouseCursor.classList.remove('cursor-grow')
+          mouseCursor.style.zIndex = '1000'
+          link.classList.remove('hovered-link')
+        })
+      })
+      navLinkss.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+          mouseCursor.classList.add('cursor-grow')
+          mouseCursor.style.zIndex = '-1'
+          link.classList.add('hovered-link')
+        })
+        link.addEventListener('mouseleave', () => {
+          mouseCursor.classList.remove('cursor-grow')
+          mouseCursor.style.zIndex = '1000'
+          link.classList.remove('hovered-link')
+        })
+      })
+    </script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
