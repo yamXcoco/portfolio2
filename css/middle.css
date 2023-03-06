@@ -90,17 +90,17 @@ body {
   margin-bottom: 100px;
   font-weight: 800;
   font-size: 90px;
-  line-height: 90px;
+  line-height: 80px;
 }
 .container .content1 p {
   width: 400px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 25px;
   margin-bottom: 40px;
 }
 .container .content1 h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 30px;
