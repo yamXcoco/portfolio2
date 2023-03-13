@@ -310,7 +310,7 @@ body {
 .full-landing-image1 {
   background: url(/img/img-3/312.png) no-repeat center;
 }
-
+.full-landing-image19,
 .full-landing-image20,
 .full-landing-image21,
 .full-landing-image22,
@@ -342,6 +342,11 @@ body {
 .full-landing-image53 {
   width: 1360px;
   background-size: cover;
+}
+.full-landing-image19 {
+  background: url(/img/img-3/Frame\ 1\ 3.png) no-repeat center;
+  height: 5305px;
+  margin-bottom: 150px;
 }
 .full-landing-image20 {
   background: url(/img/img-3/Group\ 38.png) no-repeat center;

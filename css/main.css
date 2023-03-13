@@ -298,7 +298,13 @@ body {
 .container1 .content1 .box1 .img_box {
   width: 562px;
   height: 562px;
-  border: none;
+  display: block;
+}
+.container1 .content1 .box1 img {
+  border: 1px solid #000;
+  width: 562px;
+  display: block;
+  height: 562px;
 }
 .container1 .content1 .box1 .text_box h1 {
   font-weight: 600;
