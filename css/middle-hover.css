@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 /* default */
 *,
@@ -11,8 +11,8 @@
 
 /* .flip-card-container */
 .flip-card-container {
-  height: 597px;
-  width: 453px;
+  height: 100%;
+  width: 28vw;
   position: relative;
   /* margin: 40px; */
 
@@ -297,5 +297,5 @@ button:focus + .design-container {
   left: 20px;
   color: hsla(0, 0%, 100%, 0.2);
   font-size: 16px;
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
 }

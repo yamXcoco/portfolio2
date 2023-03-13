@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +14,7 @@ ul {
   list-style: none;
 }
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: none;
   margin: 0 auto;
 }
@@ -173,13 +173,13 @@ body {
   background-size: cover;
 }
 .slide_01 .item.item_01 {
-  background-image: url('../img/m.png');
+  background-image: url("../img/m.png");
 }
 .slide_01 .item.item_02 {
-  background-image: url('../img/sllide.png');
+  background-image: url("../img/sllide.png");
 }
 .slide_01 .item.item_03 {
-  background-image: url('../img/main1.png');
+  background-image: url("../img/main1.png");
 }
 .slide_01 .slick-dots {
   bottom: -50px;
@@ -291,7 +291,7 @@ body {
   position: relative;
 }
 .container1 .content1 .box1 .text_box:after {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 100%;
 }
@@ -524,7 +524,7 @@ body {
 
 .container2 .button a {
   /* width: 200px; */
-  padding: 12px 20px;
+  padding: 12px 24px;
   text-align: center;
   color: white;
   border: solid 2px white;
@@ -596,10 +596,10 @@ body {
   color: #323232;
 }
 .container3 .content2 .box1 h3 {
-  text-align: center;
+  /* text-align: center; */
   margin: 150px 0 100px 0px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 30px;
 }
 .container3 .content2 .box1 ul {
   width: 80%;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +14,7 @@ ul {
   list-style: none;
 }
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: none;
   margin: 0 auto;
 }
@@ -91,6 +91,7 @@ body {
 .container1 .content1,
 .container2 .content1,
 .container3 .content1 {
+  /* width: 80vh; */
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -101,14 +102,14 @@ body {
   margin-top: 120px;
   margin-bottom: 50px;
   font-weight: 800;
-  font-size: 90px;
+  font-size: 54px;
   line-height: 90px;
 }
 .container1 .content1 h2,
 .container2 .content1 h2,
 .container3 .content1 h2 {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 34px;
   color: #feba00;
   margin-bottom: 80px;
 }
@@ -116,7 +117,7 @@ body {
 .container2 .content1 h3,
 .container3 .content1 h3 {
   font-weight: 600;
-  font-size: 27px;
+  font-size: 20px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 32px;
@@ -267,6 +268,9 @@ body {
 
 /* 그래픽 */
 .btn h4 {
+  position: absolute;
+  top: 0;
+  right: 0;
   font-weight: 800;
   font-size: 43px;
   line-height: 75px;
@@ -286,7 +290,8 @@ body {
 .full-landing-image10,
 .full-landing-image11,
 .full-landing-image12 {
-  width: 1360px;
+  width: 80vw;
+  margin: 0 auto;
   height: 1020px;
   /* <img src="/img/003.png" alt="" /> */
   background-size: cover;
@@ -358,7 +363,8 @@ body {
 .full-landing-image51,
 .full-landing-image52,
 .full-landing-image53 {
-  width: 1360px;
+  width: 80vw;
+  margin: 0 auto;
   background-size: cover;
 }
 .full-landing-image19 {

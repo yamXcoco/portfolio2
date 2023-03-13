@@ -42,14 +42,10 @@
     <div class="container">
       <div class="content1">
         <div class="TEXT">
-          <h1>
-            MY <br />
-            PROJECT
-          </h1>
+          <h1>MY PROJECT</h1>
           <p>
-            포토샵과 기본적인 일러스트레이션을 중심으로 다채로운 <br />화면을
-            구성, 광고뿐만 아니라 영상그래픽 웹까지 다양한 <br />
-            디자인 작업물을 만들었습니다.
+            포토샵과 기본적인 일러스트레이션을 중심으로 광고뿐만 아니라
+            영상그래픽 웹까지 다양한 작업물을 만들었습니다.
           </p>
           <h2>
             사용프로그램<br />
@@ -466,54 +462,54 @@
     <div class="cursor"></div>
     <!-- 커서 -->
     <script>
-      let mouseCursor = document.querySelector('.cursor')
-      let navLinks = document.querySelectorAll('.sub_title a') //메뉴 링크
-      let navLinkss = document.querySelectorAll('.logo a')
-      let navLinksss = document.querySelectorAll('button')
-      window.addEventListener('scroll', cursor)
-      window.addEventListener('mousemove', cursor)
+      let mouseCursor = document.querySelector(".cursor");
+      let navLinks = document.querySelectorAll(".sub_title a"); //메뉴 링크
+      let navLinkss = document.querySelectorAll(".logo a");
+      let navLinksss = document.querySelectorAll("button");
+      window.addEventListener("scroll", cursor);
+      window.addEventListener("mousemove", cursor);
       function cursor(e) {
-        mouseCursor.style.left = e.pageX + 'px'
-        mouseCursor.style.top = e.pageY + 'px'
+        mouseCursor.style.left = e.pageX + "px";
+        mouseCursor.style.top = e.pageY + "px";
       }
     </script>
     <script>
       navLinks.forEach((link) => {
-        link.addEventListener('mouseover', () => {
-          mouseCursor.classList.add('cursor-grow')
-          mouseCursor.style.zIndex = '-1'
-          link.classList.add('hovered-link')
-        })
-        link.addEventListener('mouseleave', () => {
-          mouseCursor.classList.remove('cursor-grow')
-          mouseCursor.style.zIndex = '1000'
-          link.classList.remove('hovered-link')
-        })
-      })
+        link.addEventListener("mouseover", () => {
+          mouseCursor.classList.add("cursor-grow");
+          mouseCursor.style.zIndex = "-1";
+          link.classList.add("hovered-link");
+        });
+        link.addEventListener("mouseleave", () => {
+          mouseCursor.classList.remove("cursor-grow");
+          mouseCursor.style.zIndex = "1000";
+          link.classList.remove("hovered-link");
+        });
+      });
       navLinkss.forEach((link) => {
-        link.addEventListener('mouseover', () => {
-          mouseCursor.classList.add('cursor-grow')
-          mouseCursor.style.zIndex = '-1'
-          link.classList.add('hovered-link')
-        })
-        link.addEventListener('mouseleave', () => {
-          mouseCursor.classList.remove('cursor-grow')
-          mouseCursor.style.zIndex = '1000'
-          link.classList.remove('hovered-link')
-        })
-      })
+        link.addEventListener("mouseover", () => {
+          mouseCursor.classList.add("cursor-grow");
+          mouseCursor.style.zIndex = "-1";
+          link.classList.add("hovered-link");
+        });
+        link.addEventListener("mouseleave", () => {
+          mouseCursor.classList.remove("cursor-grow");
+          mouseCursor.style.zIndex = "1000";
+          link.classList.remove("hovered-link");
+        });
+      });
       navLinksss.forEach((link) => {
-        link.addEventListener('mouseover', () => {
-          mouseCursor.classList.add('cursor-grow')
-          mouseCursor.style.zIndex = '-1'
-          link.classList.add('hovered-link')
-        })
-        link.addEventListener('mouseleave', () => {
-          mouseCursor.classList.remove('cursor-grow')
-          mouseCursor.style.zIndex = '1000'
-          link.classList.remove('hovered-link')
-        })
-      })
+        link.addEventListener("mouseover", () => {
+          mouseCursor.classList.add("cursor-grow");
+          mouseCursor.style.zIndex = "-1";
+          link.classList.add("hovered-link");
+        });
+        link.addEventListener("mouseleave", () => {
+          mouseCursor.classList.remove("cursor-grow");
+          mouseCursor.style.zIndex = "1000";
+          link.classList.remove("hovered-link");
+        });
+      });
     </script>
   </body>
 </html>
