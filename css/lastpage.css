@@ -15,9 +15,8 @@ ul {
 }
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  width: 1360px;
-  margin: 0 auto;
   cursor: none;
+  margin: 0 auto;
 }
 /* cursor */
 .cursor {
@@ -41,14 +40,26 @@ body {
   background-color: #ffe9ad;
   filter: blur(1px);
 }
+.header,
+.footer,
+.container .content1,
+.container .content2,
+.container2 {
+  width: 80vw;
+  margin: 0 auto;
+}
 .nav {
   display: flex;
-  align-items: right;
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: right; */
+  /* position: relative; */
+  margin-top: 8vw;
 }
-.logo {
-  position: absolute;
-  top: 176px;
+.logo img {
+  margin-top: 50px;
+  margin-left: auto;
+  width: 80%;
 }
 .logo:hover {
   filter: drop-shadow(5px 5px 5px gray);
@@ -56,19 +67,26 @@ body {
 .sub_title {
   display: flex;
   justify-content: right;
-  margin-left: 360px;
-  margin-top: 140px;
-  width: 1000px;
-  border-bottom: 7px solid #000;
+  /* margin-right: auto; */
+  width: 60vw;
+  border-bottom: 3px solid #000;
+  gap: 6vw;
 }
 .sub_title p {
-  margin-left: 174px;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 16px;
-  line-height: 33px;
+  line-height: 32px;
   color: #000;
-  /* color: rgba(0, 0, 0, 0.5); */
+}
+.sub_title .p1:hover {
+  color: #feba00;
+}
+.sub_title .p2:hover {
+  color: #feba00;
+}
+.sub_title .p3:hover {
+  color: #feba00;
 }
 .container1 .content1,
 .container2 .content1,
