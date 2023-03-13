@@ -16,6 +16,7 @@ ul {
 body {
   font-family: 'Noto Sans KR', sans-serif;
   cursor: none;
+  margin: 0 auto;
 }
 /* cursor */
 .cursor {
@@ -44,17 +45,21 @@ body {
 .container .content1,
 .container .content2,
 .container2 {
-  width: 1360px;
+  width: 80vw;
   margin: 0 auto;
 }
 .nav {
   display: flex;
-  align-items: right;
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: right; */
+  /* position: relative; */
+  margin-top: 8vw;
 }
-.logo {
-  position: absolute;
-  top: 170px;
+.logo img {
+  margin-top: 50px;
+  margin-left: auto;
+  width: 80%;
 }
 .logo:hover {
   filter: drop-shadow(5px 5px 5px gray);
@@ -62,17 +67,16 @@ body {
 .sub_title {
   display: flex;
   justify-content: right;
-  margin-left: 360px;
-  margin-top: 120px;
-  width: 1000px;
-  border-bottom: 7px solid #000;
+  /* margin-right: auto; */
+  width: 60vw;
+  border-bottom: 3px solid #000;
+  gap: 6vw;
 }
 .sub_title p {
-  margin: 16px 30px 0 150px;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 16px;
-  line-height: 33px;
+  line-height: 32px;
   color: #000;
 }
 .sub_title .p1:hover {
@@ -100,13 +104,7 @@ body {
 .wrapper h3 {
   text-transform: uppercase;
   -webkit-transform: translate(0, -30%) skew(-10deg, 0);
-  /* transform: translate(-50%, -50%) skew(-10deg, 0);  */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* margin: 0;
-  position: absolute;
-  font-size: 12vw;
-  font-weight: 400; */
+
   white-space: nowrap;
   /* letter-spacing:2vw; */
   z-index: 1;
@@ -114,13 +112,7 @@ body {
 .wrapper h4 {
   text-transform: uppercase;
   -webkit-transform: translate(0, 130px) skew(-10deg, 0);
-  /* transform: translate(-50%, -50%) skew(-10deg, 0);  */
-  /* left: 50%; */
-  /* top: 50%; */
-  /* margin: 0; */
-  /* position: absolute; */
-  /* font-size: 12vw; */
-  /* font-weight: 400; */
+
   white-space: nowrap;
   /* letter-spacing:2vw; */
   z-index: 1;
@@ -198,8 +190,8 @@ body {
 }
 .slide_01 .slick-dots li button {
   background-color: #feba00;
-  width: 30px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 25px;
   opacity: 0.2;
   transition: width 0.3s;
@@ -213,17 +205,17 @@ body {
 }
 .container .content1 h1 {
   margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   text-align: right;
   color: rgba(0, 0, 0, 0.5);
 }
 .container .content1 h2 {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   text-align: right;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 210px;
@@ -245,7 +237,7 @@ body {
   position: absolute;
   top: 620px;
   font-weight: 900;
-  font-size: 110px;
+  font-size: 80px;
   line-height: 160px;
   color: #000000;
   z-index: 1;
@@ -256,15 +248,15 @@ body {
   position: absolute;
   top: 920px;
   margin-top: 62px;
-  font-weight: 400;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 60px;
   color: #fff;
   letter-spacing: 0.05em;
   z-index: 1;
 }
 .footer p {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 50px;
 }
 .footer .social {
@@ -278,62 +270,75 @@ body {
   margin-top: 30px;
   margin-bottom: 100px;
 }
+.container1 {
+  width: 70%;
+  margin: 0 auto;
+}
 
 /* 두번째페이지 */
 .container1 .box1 {
-  width: 1124px;
-  margin: 0 auto;
   display: flex;
+  justify-content: center;
   align-items: center;
-  /* margin-left: 118px; */
-  margin-top: 210px;
+  margin-top: 16vh;
+  height: 100%;
+  border: 1px solid #000;
 }
 .container1 .content1 .box1 .text_box {
-  width: 562px;
-  height: 562px;
-  border: 1px solid #000;
+  width: 50%;
   display: block;
-  border-left: none;
+  border-left: 1px solid #000;
+  position: relative;
+}
+.container1 .content1 .box1 .text_box:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
 }
 .container1 .content1 .box1 .img_box {
-  width: 562px;
-  height: 562px;
+  width: 50%;
   display: block;
 }
 .container1 .content1 .box1 img {
-  border: 1px solid #000;
-  width: 562px;
+  width: 100%;
   display: block;
-  height: 562px;
 }
 .container1 .content1 .box1 .text_box h1 {
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  transform: translateX(50%);
+  width: 90%;
+  height: 100%;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 31px;
-  margin-top: 110px;
-  margin-left: 65px;
 }
 .container1 .content1 .box1 .text_box p {
+  position: absolute;
+  bottom: -60%;
+  right: 50%;
+  transform: translateX(50%);
+  width: 90%;
+  height: 100%;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 31px;
-  margin-top: 60px;
-  margin-left: 65px;
   color: #636363;
 }
 .container1 .box2 {
-  width: 1124px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
+
   margin-top: 90px;
 }
 .container1 .content1 .box2 h1 {
   font-weight: 800;
   font-size: 60px;
   line-height: 75px;
-
-  margin-right: 170px;
+  margin-right: 10vw;
 }
 .container1 .box2 button {
   margin-top: 20px;
@@ -351,40 +356,35 @@ body {
 }
 .container1 .content1 .box2 h2 {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 48px;
 }
 .container1 h5 {
   width: 100%;
   margin: 0 auto;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 75px;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 140px;
+  padding: 16px 0;
+  margin-top: 10vw;
   text-align: center;
 }
 .container1 .content2 {
-  margin-top: 130px;
+  margin-top: 10vw;
 }
 .scrollBar {
   text-align: left;
   background-color: #ffe9ad;
   border-radius: 30px;
   direction: rtl;
-  width: 1124px;
+  width: 100%;
   margin: 0 auto;
   height: 1000px;
-  /* height: 300px; */
-  /* border: 1px solid purple; */
-  /* overflow: auto; */
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  /* gap: 90px; */
   margin-bottom: 150px;
   margin-top: 150px;
 }
@@ -433,7 +433,7 @@ body {
 .container2 .content1 h1 {
   margin: 100px 0 50px;
   font-weight: 700;
-  font-size: 66px;
+  font-size: 60px;
   line-height: 77px;
 }
 .shadow {
@@ -446,39 +446,39 @@ body {
 }
 .container2 .content1 p {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 27px;
   color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 230px;
+  margin-bottom: 10vw;
 }
 .container2 .content2 {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 15vw;
+}
+.container2 .content2 .imgs {
+  display: flex;
+  gap: 5vw;
 }
 .container2 .content2 img {
-  margin-right: 50px;
-  margin-bottom: 200px;
+  width: 30%;
+  /* margin-right: 50px; */
+  /* margin-bottom: 200px; */
   transition: transform 2s, filter 1.5s ease-in-out;
   transform-origin: center center;
   filter: brightness(50%);
 }
 .container2 .content2 img:hover {
   filter: brightness(100%);
-  /* transform: scale(1.3) */
 }
 .container2 .content2 .box {
   display: flex;
+  justify-content: space-between;
 }
 .container2 .content2 .box li {
-  width: 340px;
-  height: 280px;
+  width: 30%;
+  height: 16vw;
   background: #feba00;
   border-radius: 20px;
-  /* text-align: center; */
-  /* line-height: 280px;
-  font-weight: 700;
-  font-size: 36px; */
-  /* position: relative; */
 }
 .container2 .overlay {
   position: absolute;
@@ -497,11 +497,11 @@ body {
 .container2 .title {
   position: absolute;
   width: 500px;
+  top: 50%;
   left: 50%;
-  transform: translatex(-50%);
-  top: 120px;
+  transform: translate(-50%, -50%);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -509,27 +509,27 @@ body {
   transition: top 0.5s ease;
 }
 .container2 li:hover .title {
-  top: 90px;
+  top: 36%;
 }
 .container2 .button {
   position: absolute;
-  width: 500px;
+  width: 10vw;
   left: 50%;
-  top: 180px;
-  transform: translatex(-50%);
+  top: 70%;
+  transform: translate(-50%, -50%);
   text-align: center;
   opacity: 0;
   transition: opacity 0.35s ease;
 }
 
 .container2 .button a {
-  width: 200px;
-  padding: 12px 48px;
+  /* width: 200px; */
+  padding: 12px 20px;
   text-align: center;
   color: white;
   border: solid 2px white;
   z-index: 1;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 .container2 .button:hover a {
@@ -544,39 +544,39 @@ body {
 }
 .container2 .content2 .box li:nth-child(1) {
   position: absolute;
-  bottom: 120px;
-  left: 106px;
+  bottom: -6vw;
+  left: 3%;
 }
 .container2 .content2 .box li:nth-child(2) {
   position: absolute;
-  bottom: 120px;
-  right: 460px;
+  bottom: -6vw;
+  left: 40%;
 }
 .container2 .content2 .box li:nth-child(3) {
   position: absolute;
-  bottom: 120px;
-  right: 6px;
+  bottom: -6vw;
+  left: 76%;
 }
 
 /* 네번째 페이지 */
 .container3 {
-  width: 1360px;
+  width: 80vw;
   margin: 0 auto;
   text-align: center;
 }
 .container3 .content1 h1 {
   margin: 168px 0 10px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 28px;
 }
 .container3 .content1 h2 {
   font-weight: 700;
-  font-size: 70px;
+  font-size: 60px;
 }
 .container3 .content1 p {
   margin: 10px 0 160px;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   color: rgba(50, 50, 50, 0.7);
 }
@@ -585,7 +585,7 @@ body {
 }
 .container3 .content2 .box1,
 .container3 .content2 .box2 {
-  width: 680px;
+  width: 50%;
   border: 1px solid #000;
   margin-bottom: 144px;
   display: block;
@@ -596,25 +596,27 @@ body {
   color: #323232;
 }
 .container3 .content2 .box1 h3 {
-  text-align: left;
-  margin: 150px 0 100px 90px;
+  text-align: center;
+  margin: 150px 0 100px 0px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
 }
 .container3 .content2 .box1 ul {
-  margin-left: 100px;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-evenly;
   text-align: left;
 }
 .container3 .content2 .box1 ul li {
-  width: 247px;
+  /* width: 247px; */
 }
 .container3 .content2 .box1 ul li i {
-  margin-right: 12px;
+  gap: 12px;
 }
 .container3 .content2 .box1 ul h4 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   margin: 12px 0 36px;
 }
 .container3 .content2 .box1 ul p {
