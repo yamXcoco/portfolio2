@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +14,7 @@ ul {
   list-style: none;
 }
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   cursor: none;
   margin: 0 auto;
 }
@@ -45,15 +45,13 @@ body {
 .container .content1,
 .container .content2,
 .container2 {
-  width: 80vw;
+  width: 70vw;
   margin: 0 auto;
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* align-items: right; */
-  /* position: relative; */
   margin-top: 8vw;
 }
 .logo img {
@@ -67,7 +65,6 @@ body {
 .sub_title {
   display: flex;
   justify-content: right;
-  /* margin-right: auto; */
   width: 60vw;
   border-bottom: 3px solid #000;
   gap: 6vw;
@@ -79,33 +76,25 @@ body {
   line-height: 32px;
   color: #000;
 }
-.sub_title .p1:hover {
-  color: #feba00;
-}
+.sub_title .p1:hover,
+.sub_title .p3:hover,
 .sub_title .p2:hover {
   color: #feba00;
 }
-.sub_title .p3:hover {
-  color: #feba00;
-}
-.container .content1 {
-}
 .container {
-  width: 80vw;
-  /* display: flex; */
-  /* justify-content: space-between; */
+  width: 70vw;
   margin: 0 auto;
-  /* display: flex; */
 }
 .container .content1 {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
+
 .container .content1 .TEXT {
   width: 30%;
 }
 .container .content1 h1 {
-  margin: 60px 0;
+  margin: 50px 0;
   /* margin-bottom: 60px; */
   font-weight: 800;
   font-size: 54px;
@@ -116,43 +105,45 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .container .content1 h2 {
   /* font-weight: 700; */
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .container .content1 h3 {
   font-weight: 600;
   font-size: 16px;
   line-height: 25px;
   color: #636363;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .container .box1 {
   display: flex;
   width: 70%;
   margin-top: 60px;
+  justify-content: right;
 }
-.container .box li {
+.container .box1 li {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 450px;
-  /* width: 453px; */
   border-top: 2px solid #999999;
 }
 .container .box img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
-
 .container .box2 {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+.container .box2 li {
+  align-items: center;
+  /* justify-content: center; */
+  height: 450px;
+  border-top: 2px solid #999999;
 }
 
 .footer p {
@@ -185,4 +176,91 @@ body {
   display: none;
   opacity: 80%;
   z-index: 100;
+}
+
+@media (max-width: 1024px) {
+  .header,
+  .footer,
+  .container .content1,
+  .container .content2,
+  .container2,
+  .container {
+    width: 80vw;
+  }
+  .container .content1 h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .container .content1 p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .container .content1 h2 {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .container .box1 {
+    margin-top: 60px;
+    justify-content: right;
+  }
+  .container .box1 li {
+    height: 380px;
+  }
+  .container .box2 li {
+    height: 380px;
+  }
+  .container .box img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .header,
+  .footer,
+  .container .content1,
+  .container .content2,
+  .container2,
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .container .content1 h2 {
+    display: none;
+  }
+  .header .logo {
+    width: 120px;
+  }
+  .sub_title p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .container .content1 {
+    display: block;
+  }
+  .container .content1 .TEXT {
+    width: 100%;
+  }
+  .container .box {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+    justify-content: right;
+  }
+  .container .box1 li,
+  .container .box li {
+    height: 450px;
+    width: 100%;
+    border: none;
+  }
+  .container .box img {
+    width: 300px;
+    height: 300px;
+  }
+  .container .box2 {
+    margin: 0;
+  }
 }

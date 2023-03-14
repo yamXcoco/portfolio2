@@ -1,18 +1,12 @@
-/* 기본 색상 변수에 담기 */
 html {
   --color-texta: #1d1d1d;
   --color-textb: #fff;
 }
-/* 시스템 커서 안 보이게 숨기기 */
+
 body {
   cursor: none;
 }
-/* .gnb {
-  display: flex;
-  background-color: #000;
-  height: 100px;
-} */
-/* 커스텀 커서 스타일 정의해주기 */
+
 .cursor {
   width: 2rem;
   height: 2rem;
