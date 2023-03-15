@@ -205,7 +205,6 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.5);
-  /* margin-bottom: 210px; */
 }
 .container .content1 h1 span,
 .container .content1 h2 span {
@@ -232,19 +231,6 @@ body {
   color: #000000;
   z-index: 1;
 }
-/* .container h4 {
-  width: 1360;
-  margin: 0 auto;
-  position: absolute;
-  top: 920px;
-  margin-top: 62px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 60px;
-  color: #fff;
-  letter-spacing: 0.05em;
-  z-index: 1;
-} */
 .footer p {
   font-size: 15px;
   margin-bottom: 50px;
@@ -738,6 +724,34 @@ body {
     font-size: 60px;
     line-height: 80px;
   }
+  .container .content1 .imgbox {
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px;
+    top: 0vw;
+  }
+  .container .content1 .item h5 {
+    font-size: 30px;
+    line-height: 50px;
+    padding: 10px 20px;
+  }
+  .container .content1 .item h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container .content1 h1 {
+    top: -50vw;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .container .content1 h2 {
+    top: -50vw;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
   .container1 .content1 .box1 .text_box p {
     opacity: 0;
   }
@@ -788,10 +802,6 @@ body {
     font-size: 60px;
     line-height: 60px;
   }
-  /* .container h4 {
-    top: 700px;
-    font-size: 20px;
-  } */
   .footer .social {
     height: 30px;
   }
@@ -880,14 +890,9 @@ body {
     width: 90vw;
     margin: 0 auto;
   }
-
-  .container .content1 h2 {
-    display: none;
-  }
   .header .logo {
     width: 120px;
   }
-
   .container h4 {
     top: 680px;
     line-height: 0px;
@@ -899,16 +904,42 @@ body {
     font-size: 30px;
     line-height: 0;
   }
-  .container .content1 {
-    display: none;
-  }
   .footer p {
-    padding-top: 30vh;
+    padding-top: 50px;
     font-size: 10px;
     margin-bottom: 50px;
   }
   .footer .social img {
     height: 20px;
+  }
+  .container .content1 .imgbox {
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -10vw;
+  }
+  .container .content1 .item {
+    width: 150px;
+    height: 150px;
+  }
+  .container .content1 .item h5 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 10px 20px;
+    width: 150px;
+  }
+  .container .content1 .item h6 {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .container .content1 .textbox {
+    display: none;
+    height: 0;
   }
   .container1 .content1 .box1 .text_box h1 {
     display: none;
