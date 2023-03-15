@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* background-color: #f2eee3; */
 }
 a {
   color: inherit;
@@ -19,7 +20,7 @@ body {
 .path {
   fill: none;
   stroke: #feba00;
-  stroke-width: 3px;
+  stroke-width: 2px;
 }
 /* cursor */
 .cursor {
@@ -153,23 +154,58 @@ body {
   color: #feba00;
   opacity: 100%;
 }
-
+.container .content1 .imgbox {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px;
+  justify-content: right;
+  position: relative;
+  top: -10vw;
+}
+.container .content1 .item2 {
+  color: #fff;
+  background-color: #feba00;
+}
+.container .content1 .item3:hover {
+  color: #fff;
+  background-color: #feba00;
+}
+.container .content1 .item3 {
+  color: #feba00;
+  border: 1px solid #feba00;
+}
+.container .content1 .item h5 {
+  font-weight: 400;
+  font-size: 77px;
+  line-height: 80px;
+  padding: 20px;
+}
+.container .content1 .item h6 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 0 20px;
+}
+.container .content1 .textbox {
+  height: 0;
+}
 .container .content1 h1 {
-  margin-top: 60px;
+  position: relative;
+  top: -40vw;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  text-align: right;
   color: rgba(0, 0, 0, 0.5);
 }
 .container .content1 h2 {
+  position: relative;
+  top: -40vw;
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  text-align: right;
   color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 210px;
+  /* margin-bottom: 210px; */
 }
 .container .content1 h1 span,
 .container .content1 h2 span {
@@ -179,7 +215,9 @@ body {
 .container .content1 h1 span:hover,
 .container .content1 h2 span:hover {
   color: #feba00;
-  font-size: 20px;
+}
+.container .content1 {
+  height: auto;
 }
 .container h3,
 .container .wrapper h4 {
@@ -194,7 +232,7 @@ body {
   color: #000000;
   z-index: 1;
 }
-.container h4 {
+/* .container h4 {
   width: 1360;
   margin: 0 auto;
   position: absolute;
@@ -206,7 +244,7 @@ body {
   color: #fff;
   letter-spacing: 0.05em;
   z-index: 1;
-}
+} */
 .footer p {
   font-size: 15px;
   margin-bottom: 50px;
@@ -695,16 +733,11 @@ body {
 @media (max-width: 1024px) {
   .container h3,
   .container .wrapper h4 {
-    top: 35vh;
+    top: 300px;
     right: 15vw;
     font-size: 60px;
     line-height: 80px;
   }
-  .container h5 {
-    color: #000;
-    display: none;
-  }
-
   .container1 .content1 .box1 .text_box p {
     opacity: 0;
   }
@@ -730,6 +763,13 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .gotop {
+    right: 40px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
   .sub_title p {
     font-size: 14px;
   }
@@ -743,14 +783,15 @@ body {
   }
   .container h3,
   .container .wrapper h4 {
-    top: 530px;
+    top: 300px;
+    right: 80px;
     font-size: 60px;
     line-height: 60px;
   }
-  .container h4 {
+  /* .container h4 {
     top: 700px;
     font-size: 20px;
-  }
+  } */
   .footer .social {
     height: 30px;
   }
@@ -839,41 +880,32 @@ body {
     width: 90vw;
     margin: 0 auto;
   }
+
   .container .content1 h2 {
     display: none;
   }
   .header .logo {
     width: 120px;
   }
-  .slider {
-    margin-bottom: 100px;
-  }
-  .slide_01 .item {
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .slide_01 .slick-dots {
-    bottom: -30px;
-  }
-  .slide_01 .slick-dots li button {
-    width: 12px;
-    height: 12px;
-  }
-  .slide_01 .slick-dots li.slick-active button {
-    width: 30px;
+
+  .container h4 {
+    top: 680px;
+    line-height: 0px;
   }
   .container h3,
   .container .wrapper h4 {
-    line-height: 10px;
-    font-size: 42px;
-    color: #000000;
+    top: 200px;
+    right: 10vw;
+    font-size: 30px;
+    line-height: 0;
   }
-  .container h4 {
-    top: 680px;
-    font-size: 14px;
-    line-height: 24px;
+  .container .content1 {
+    display: none;
+  }
+  .footer p {
+    padding-top: 30vh;
+    font-size: 10px;
+    margin-bottom: 50px;
   }
   .footer .social img {
     height: 20px;

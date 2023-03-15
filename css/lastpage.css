@@ -94,9 +94,7 @@ body {
 .container1 .content1,
 .container2 .content1,
 .container3 .content1 {
-  /* width: 80vh; */
   display: flex;
-  /* justify-content: space-between; */
   position: relative;
 }
 .container1 .content1 h1,
@@ -297,7 +295,6 @@ body {
   width: 70vw;
   margin: 0 auto;
   height: 1020px;
-  /* <img src="/img/003.png" alt="" /> */
   background-size: cover;
   margin-bottom: 40px;
 }
@@ -440,7 +437,7 @@ body {
 .full-landing-image40 {
   background: url(/img/img-3/b1.png) no-repeat center;
   height: 4690px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 .full-landing-image41 {
   background: url(/img/img-3/b2.png) no-repeat center;
@@ -622,6 +619,13 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .gotop {
+    right: 40px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
   .header,
   .footer,
   .container .content1,
